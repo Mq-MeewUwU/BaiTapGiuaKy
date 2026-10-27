@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Portfolio | Chu Quang Minh</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ánh sáng nền trang trí -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- ==================== THANH ĐIỀU HƯỚNG ==================== -->
+    <header>
+      <div class="nav-container">
+        <a href="#about" class="logo">
+          <i class="fa-solid fa-atom"></i>
+          <span>Portfolio</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about" class="active">1. Giới thiệu (About Me)</a></li>
+          <li><a href="#projects">2. Dự án (6 Bài tập)</a></li>
+          <li><a href="#conclusion">3. Tổng kết (Conclusion)</a></li>
+        </ul>
+        <button
+          class="theme-btn"
+          id="themeToggle"
+          title="Đổi giao diện Sáng/Tối"
+        >
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ==================== PHẦN 1: TRANG GIỚI THIỆU (ABOUT ME) ==================== -->
+    <section id="about">
+      <div class="hero reveal">
+        <div>
+          <div class="hero-tag">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>Nhập môn Công nghệ số & Ứng dụng Trí tuệ nhân tạo</span>
+          </div>
+          <!-- ĐIỀN HỌ TÊN CỦA BẠN TẠI ĐÂY -->
+          <h1>
+            Xin chào, mình là <br /><span class="gradient-text"
+              >Chu Quang Minh</span
+            >
+          </h1>
+
+          <div class="typing-wrapper">
+            <span id="typingText"></span><span class="cursor">&nbsp;</span>
+          </div>
+
+          <!-- ĐIỀN ĐOẠN GIỚI THIỆU NGẮN GỌN TẠI ĐÂY -->
+          <p class="hero-desc">
+            Sinh viên ngành <strong>Vật lý học</strong> tại Trường Đại học Khoa
+            học Tự nhiên – ĐHQGHN (VNU-HUS). Đam mê khám phá thế giới Quang học
+            lượng tử, lập trình giao diện web và ứng dụng các công cụ Trí tuệ
+            nhân tạo (AI) để tối ưu hóa việc học tập cũng như nghiên cứu khoa
+            học.
+          </p>
+
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-layer-group"></i> Xem 6 Bài tập Dự án
+            </a>
+            <a href="#conclusion" class="btn btn-outline">
+              <i class="fa-solid fa-flag-checkered"></i> Xem Trang Tổng kết
+            </a>
+          </div>
+        </div>
+
+        <!-- KHUNG ẢNH ĐẠI DIỆN CÁ NHÂN -->
+        <div class="avatar-card">
+          <div class="avatar-img-wrapper">
+            <img src="img/face.jpg" alt="Ảnh đại diện" />
+          </div>
+          <h3>Chu Quang Minh</h3>
+          <p
+            style="
+              color: var(--text-secondary);
+              font-size: 0.9rem;
+              margin-bottom: 1rem;
+            "
+          >
+            Physics Undergraduate
+          </p>
+          <div style="display: flex; justify-content: center; gap: 0.75rem">
+            <!-- ĐIỀN LINK MẠNG XÃ HỘI / GITHUB CỦA BẠN -->
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="btn-outline"
+              style="
+                padding: 0.5rem 0.85rem;
+                border-radius: 0.5rem;
+                text-decoration: none;
+              "
+            >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a
+              href="mailto:email@example.com"
+              class="btn-outline"
+              style="
+                padding: 0.5rem 0.85rem;
+                border-radius: 0.5rem;
+                text-decoration: none;
+              "
+            >
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 MỤC TIÊU YÊU CẦU TRONG TRANG ABOUT ME -->
+      <div class="about-grid reveal">
+        <!-- 1. Bản thân -->
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+          <h3>Giới thiệu bản thân</h3>
+          <ul>
+            <!-- ĐIỀN THÔNG TIN CÁ NHÂN CỦA BẠN -->
+            <li>
+              <i class="fa-solid fa-angle-right"></i>
+              <span><strong>Họ và tên:</strong> Chu Quang Minh</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-angle-right"></i>
+              <span
+                ><strong>Ngành học:</strong> Vật lý học – ĐH Khoa học Tự nhiên
+                (VNU-HUS)</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-angle-right"></i>
+              <span
+                ><strong>Sở thích:</strong> Nghiên cứu vật lý, viết code, thể
+                thao , nghe nhạc ...</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2. Mục tiêu học tập & Định hướng -->
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-compass"></i></div>
+          <h3>Mục tiêu học tập & Định hướng</h3>
+          <ul>
+            <!-- ĐIỀN MỤC TIÊU HỌC TẬP CỦA BẠN -->
+            <li>
+              <i class="fa-solid fa-angle-right"></i>
+              <span
+                >Xây dựng nền tảng vững chắc về Vật lý đại cương và chuyên sâu
+                theo hướng
+                <strong>Quang học lượng tử (Quantum Optics)</strong>.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-angle-right"></i>
+              <span
+                >Thành thạo kỹ năng công nghệ số, quản lý mã nguồn với GitHub và
+                khai thác AI hỗ trợ tra cứu tài liệu học thuật quốc tế.</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3. Mục tiêu của Portfolio -->
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Mục tiêu của Portfolio này</h3>
+          <ul>
+            <!-- ĐIỀN MỤC TIÊU PORTFOLIO CỦA BẠN -->
+            <li>
+              <i class="fa-solid fa-angle-right"></i>
+              <span
+                >Tổng hợp và hệ thống hóa toàn bộ kiến thức, kỹ năng số đã thực
+                hành qua 6 chương của học phần.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-angle-right"></i>
+              <span
+                >Lưu trữ các sản phẩm cá nhân trực quan trên nền tảng web để dễ
+                dàng truy cập, chia sẻ và đánh giá năng lực.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PHẦN 2: TRANG DỰ ÁN (6 BÀI TẬP CUỐI KÌ) ==================== -->
+    <section id="projects">
+      <div class="section-header reveal">
+        <span class="section-badge">Bước 2 • Sản phẩm học tập</span>
+        <h2 class="section-title">Dự án & Bài tập thực hành (Projects)</h2>
+        <p class="section-subtitle">
+          Tập hợp 6 bài tập tính điểm cuối kì từ Chương 1 đến Chương 6, bao gồm
+          mục tiêu, quá trình thực hiện và sản phẩm minh chứng.
+        </p>
+      </div>
+
+      <!-- Bộ lọc nhanh theo từng bài tập -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">
+          Tất cả (6 Bài)
+        </button>
+        <button class="filter-btn" onclick="filterProjects('bai1', this)">
+          Bài 1 • Tệp & Thư mục
+        </button>
+        <button class="filter-btn" onclick="filterProjects('bai2', this)">
+          Bài 2 • Tìm kiếm học thuật
+        </button>
+        <button class="filter-btn" onclick="filterProjects('bai3', this)">
+          Bài 3 • Viết Prompt AI
+        </button>
+        <button class="filter-btn" onclick="filterProjects('bai4', this)">
+          Bài 4 • Hợp tác nhóm
+        </button>
+        <button class="filter-btn" onclick="filterProjects('bai5', this)">
+          Bài 5 • Sáng tạo nội dung AI
+        </button>
+        <button class="filter-btn" onclick="filterProjects('bai6', this)">
+          Bài 6 • AI có trách nhiệm
+        </button>
+      </div>
+
+      <div class="projects-list">
+        <!-- ==================== BÀI TẬP 1 (CHƯƠNG 1 - MỤC 1.4) ==================== -->
+        <article class="project-card reveal" data-category="bai1">
+          <div class="project-header">
+            <div>
+              <span class="chapter-tag"
+                >Bài tập 1 • Chương 1 (Mục 1.4): Máy tính và các thiết bị ngoại
+                vi</span
+              >
+              <h3 class="project-title">
+                Thao tác cơ bản với tệp tin và thư mục
+              </h3>
+            </div>
+            <span class="section-badge">Hoàn thành</span>
+          </div>
+
+          <div class="project-body">
+            <div>
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-crosshairs"></i> 1. Mục tiêu bài tập
+                </h4>
+                <p>
+                  Thiết kế và tạo một cấu trúc thư mục logic trên máy tính để tổ
+                  chức tài liệu học tập cá nhân, đồng thời áp dụng quy tắc đặt
+                  tên tệp nhất quán, dễ tra cứu.
+                </p>
+              </div>
+
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-folder-tree"></i> 2. Lý do thiết kế cấu
+                  trúc & Quy tắc đặt tên tệp
+                </h4>
+                <!-- ĐIỀN MÔ TẢ CẤU TRÚC THƯ MỤC CỦA BẠN TẠI ĐÂY -->
+                <p style="margin-bottom: 0.5rem">
+                  <strong>• Lý do thiết kế cấu trúc:</strong> Thư mục gốc được
+                  chia theo từng Học kỳ (VD:
+                  <span class="code-pill">HK1_2026_2027</span>), bên trong chia
+                  thành từng môn học riêng biệt (<span class="code-pill"
+                    >01_VatLyDaiCuong</span
+                  >, <span class="code-pill">02_CongNgheSo_AI</span>...) và phân
+                  nhánh thành: <em>BaiGiang, BaiTap, TaiLieuThamKhao</em> giúp
+                  tìm kiếm nhanh chóng, tránh thất lạc.
+                </p>
+                <p>
+                  <strong>• Quy tắc đặt tên tệp (Naming Convention):</strong> Áp
+                  dụng chuẩn không dấu, dùng dấu gạch dưới:
+                  <span class="code-pill"
+                    >[NămThángNgày]_[MãMôn]_[TênNộiDung]_[PhiênBản].ext</span
+                  >
+                  (Ví dụ:
+                  <span class="code-pill">20261027_CNS_BaiTap1_v1.pdf</span>).
+                </p>
+              </div>
+            </div>
+
+            <!-- CHÈN ẢNH CHỤP MÀN HÌNH CẤU TRÚC THƯ MỤC CỦA BẠN -->
+            <div class="media-placeholder">
+              <!-- THAY link ảnh của bạn vào thuộc tính src="..." bên dưới -->
+              <img
+                src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80"
+                alt="Ảnh chụp màn hình cấu trúc thư mục"
+                onclick="openLightbox(this.src)"
+              />
+              <div class="media-caption">
+                <i class="fa-solid fa-image"></i> Ảnh minh họa cấu trúc thư mục
+                đã tạo (Bấm vào ảnh để phóng to)
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== BÀI TẬP 2 (CHƯƠNG 2 - MỤC 2.4) ==================== -->
+        <article class="project-card reveal" data-category="bai2">
+          <div class="project-header">
+            <div>
+              <span class="chapter-tag"
+                >Bài tập 2 • Chương 2 (Mục 2.4): Khai thác dữ liệu và thông
+                tin</span
+              >
+              <h3 class="project-title">
+                Tìm kiếm và đánh giá thông tin học thuật
+              </h3>
+            </div>
+            <span class="section-badge">Hoàn thành</span>
+          </div>
+
+          <div class="project-body">
+            <div>
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-magnifying-glass"></i> 1. Chủ đề, Từ
+                  khóa & Toán tử tìm kiếm nâng cao
+                </h4>
+                <!-- ĐIỀN TỪ KHÓA VÀ TOÁN TỬ BẠN ĐÃ DÙNG -->
+                <ul>
+                  <li>
+                    <strong>Chủ đề quan tâm:</strong> Ứng dụng Quang học lượng
+                    tử (Quantum Optics) và Điện toán lượng tử.
+                  </li>
+                  <li>
+                    <strong>Toán tử đã sử dụng:</strong> <br /><span
+                      class="code-pill"
+                      >"quantum optics" filetype:pdf site:edu</span
+                    >
+                    <br /><span class="code-pill"
+                      >"trí tuệ nhân tạo" AND "vật lý" site:edu.vn
+                      filetype:pdf</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-scale-balanced"></i> 2. Phân tích phương
+                  pháp tìm kiếm & Đánh giá độ tin cậy
+                </h4>
+                <!-- ĐIỀN ĐOẠN PHÂN TÍCH CỦA BẠN TẠI ĐÂY -->
+                <p style="margin-bottom: 0.5rem">
+                  <strong>• Sự khác biệt:</strong> So với tìm kiếm thông thường
+                  (cho hàng triệu kết quả quảng cáo hoặc trang tin đại chúng),
+                  việc kết hợp <span class="code-pill">site:</span>,
+                  <span class="code-pill">filetype:pdf</span> và dấu ngoặc kép
+                  <span class="code-pill">"..."</span> giúp lọc chính xác các
+                  giáo trình, bài báo khoa học từ các trường đại học uy tín.
+                </p>
+                <p>
+                  <strong>• Cách đánh giá độ tin cậy (CRAAP Test):</strong> Kiểm
+                  tra tính cập nhật (Currency), tên miền tổ chức giáo dục
+                  <span class="code-pill">.edu / .ac</span>, tác giả có chuyên
+                  môn rõ ràng và trích dẫn chuẩn học thuật.
+                </p>
+              </div>
+            </div>
+
+            <!-- CHÈN ẢNH CHỤP MÀN HÌNH KẾT QUẢ TÌM KIẾM -->
+            <div class="media-placeholder">
+              <!-- THAY link ảnh kết quả tìm kiếm của bạn vào src="..." -->
+              <img
+                src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
+                alt="Ảnh chụp màn hình kết quả tìm kiếm"
+                onclick="openLightbox(this.src)"
+              />
+              <div class="media-caption">
+                <i class="fa-solid fa-image"></i> Ảnh chụp màn hình kết quả tìm
+                kiếm với toán tử nâng cao
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== BÀI TẬP 3 (CHƯƠNG 3 - MỤC 3.4) ==================== -->
+        <article class="project-card reveal" data-category="bai3">
+          <div class="project-header">
+            <div>
+              <span class="chapter-tag"
+                >Bài tập 3 • Chương 3 (Mục 3.4): Tổng quan về Trí tuệ nhân
+                tạo</span
+              >
+              <h3 class="project-title">
+                Viết Prompt hiệu quả cho các tác vụ học tập
+              </h3>
+            </div>
+            <span class="section-badge">Hoàn thành</span>
+          </div>
+
+          <div class="project-body">
+            <div>
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-terminal"></i> 1. So sánh 2 phiên bản
+                  Prompt (Trước & Sau cải thiện)
+                </h4>
+                <div class="prompt-compare">
+                  <!-- ĐIỀN PROMPT BAN ĐẦU -->
+                  <div class="prompt-box prompt-bad">
+                    <strong
+                      style="
+                        color: #f87171;
+                        display: block;
+                        margin-bottom: 0.4rem;
+                      "
+                    >
+                      <i class="fa-solid fa-circle-xmark"></i> Prompt ban đầu
+                      (Chưa tốt):
+                    </strong>
+                    "Hãy giải thích cho tôi về hiệu ứng quang điện và tóm tắt
+                    bài học này."
+                  </div>
+                  <!-- ĐIỀN PROMPT ĐÃ CẢI THIỆN -->
+                  <div class="prompt-box prompt-good">
+                    <strong
+                      style="
+                        color: #4ade80;
+                        display: block;
+                        margin-bottom: 0.4rem;
+                      "
+                    >
+                      <i class="fa-solid fa-circle-check"></i> Prompt đã cải
+                      thiện:
+                    </strong>
+                    "Đóng vai giảng viên Vật lý đại học. Hãy tóm tắt lý thuyết
+                    Hiệu ứng quang điện cho sinh viên năm nhất thành 3 phần: (1)
+                    Định nghĩa & Công thức Einstein, (2) Ý nghĩa lượng tử, (3) 3
+                    câu hỏi trắc nghiệm ôn tập có đáp án. Trình bày dạng bảng và
+                    gạch đầu dòng ngắn gọn."
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-lightbulb"></i> 2. So sánh kết quả đầu
+                  ra & Giải thích nguyên tắc
+                </h4>
+                <!-- ĐIỀN GIẢI THÍCH TẠI SAO PROMPT CẢI THIỆN HIỆU QUẢ HƠN -->
+                <p>
+                  Phiên bản cải thiện cho kết quả có cấu trúc rõ ràng, đúng
+                  trình độ đại học và sát nhu cầu ôn tập hơn hẳn vì đã áp dụng
+                  công thức viết Prompt chuẩn: xác định
+                  <strong>Vai trò (Role)</strong>,
+                  <strong>Ngữ cảnh (Context)</strong>,
+                  <strong>Nhiệm vụ cụ thể (Task)</strong> và
+                  <strong>Định dạng đầu ra (Format)</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- CHÈN ẢNH CHỤP MÀN HÌNH KẾT QUẢ GEMINI / CHATGPT -->
+            <div class="media-placeholder">
+              <!-- THAY link ảnh chụp màn hình AI của bạn vào src="..." -->
+              <img
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                alt="Ảnh chụp so sánh kết quả Prompt"
+                onclick="openLightbox(this.src)"
+              />
+              <div class="media-caption">
+                <i class="fa-solid fa-image"></i> Ảnh chụp màn hình kết quả phản
+                hồi trên Gemini / ChatGPT
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== BÀI TẬP 4 (CHƯƠNG 4 - MỤC 4.4) ==================== -->
+        <article class="project-card reveal" data-category="bai4">
+          <div class="project-header">
+            <div>
+              <span class="chapter-tag"
+                >Bài tập 4 • Chương 4 (Mục 4.4): Giao tiếp và hợp tác trong môi
+                trường số</span
+              >
+              <h3 class="project-title">
+                Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm
+              </h3>
+            </div>
+            <span class="section-badge">Hoàn thành</span>
+          </div>
+
+          <div class="project-body">
+            <div>
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-users-gear"></i> 1. Kế hoạch dự án nhóm
+                  & Công cụ sử dụng
+                </h4>
+                <!-- ĐIỀN TÊN DỰ ÁN NHÓM & CÔNG CỤ TRELLO/NOTION CỦA BẠN -->
+                <p>
+                  <strong>• Công cụ sử dụng:</strong> Notion / Trello (Mô hình
+                  bảng Kanban).<br />
+                  <strong>• Chủ đề dự án nhóm (giả định):</strong> Thiết kế bài
+                  thuyết trình & báo cáo tìm hiểu ứng dụng AI trong nghiên cứu
+                  Khoa học Tự nhiên.
+                </p>
+              </div>
+
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-list-check"></i> 2. Cách phân công nhiệm
+                  vụ, theo dõi tiến độ & cộng tác
+                </h4>
+                <!-- ĐIỀN CÁCH BẠN SỬ DỤNG TRELLO/NOTION ĐỂ QUẢN LÝ NHÓM -->
+                <ul>
+                  <li>
+                    <strong>Phân công nhiệm vụ:</strong> Chia thẻ công việc
+                    (Cards) gắn thẻ thành viên phụ trách (Assignee) và hạn chót
+                    (Deadline) rõ ràng cho từng người.
+                  </li>
+                  <li>
+                    <strong>Theo dõi tiến độ:</strong> Chia làm 4 cột trạng
+                    thái:
+                    <em
+                      >Cần làm (To Do) → Đang thực hiện (In Progress) → Đang
+                      kiểm duyệt (Review) → Hoàn thành (Done)</em
+                    >.
+                  </li>
+                  <li>
+                    <strong>Cộng tác nhóm:</strong> Đính kèm link tài liệu
+                    chung, nhận xét (Comment) trực tiếp dưới từng thẻ và cập
+                    nhật checklist theo thời gian thực.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- CHÈN ẢNH CHỤP MÀN HÌNH KHÔNG GIAN LÀM VIỆC TRELLO / NOTION -->
+            <div class="media-placeholder">
+              <!-- THAY link ảnh chụp bảng Trello/Notion của bạn vào src="..." -->
+              <img
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80"
+                alt="Không gian làm việc trên Trello/Notion"
+                onclick="openLightbox(this.src)"
+              />
+              <div class="media-caption">
+                <i class="fa-solid fa-image"></i> Ảnh chụp màn hình không gian
+                làm việc nhóm trên Notion / Trello
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== BÀI TẬP 5 (CHƯƠNG 5 - MỤC 5.4) ==================== -->
+        <article class="project-card reveal" data-category="bai5">
+          <div class="project-header">
+            <div>
+              <span class="chapter-tag"
+                >Bài tập 5 • Chương 5 (Mục 5.4): Sáng tạo nội dung số</span
+              >
+              <h3 class="project-title">
+                Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung
+              </h3>
+            </div>
+            <span class="section-badge">Hoàn thành</span>
+          </div>
+
+          <div class="project-body">
+            <div>
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-wand-magic-sparkles"></i> 1. Mô tả quy
+                  trình sản xuất & Công cụ đã sử dụng
+                </h4>
+                <!-- ĐIỀN QUY TRÌnh SẢN XUẤT NỘI DUNG SỐ CỦA BẠN -->
+                <ul>
+                  <li>
+                    <strong>Chủ đề sản phẩm:</strong> Video ngắn giải thích khái
+                    niệm công nghệ số & trí tuệ nhân tạo tạo sinh (Generative
+                    AI).
+                  </li>
+                  <li>
+                    <strong>Quy trình 4 bước:</strong> (1) Lên kịch bản & dàn ý
+                    → (2) Tạo hình ảnh/slide minh họa & giọng đọc → (3) Biên
+                    tập, dựng video và thêm phụ đề → (4) Xuất bản.
+                  </li>
+                  <li>
+                    <strong>Công cụ sử dụng:</strong> Gemini / ChatGPT (lên kịch
+                    bản), Canva / CapCut (thiết kế và biên tập video).
+                  </li>
+                </ul>
+              </div>
+
+              <div class="sub-box">
+                <h4>
+                  <i class="fa-solid fa-robot"></i> 2. Cách AI đã hỗ trợ trong
+                  quá trình sáng tạo
+                </h4>
+                <p>
+                  AI tạo sinh giúp rút ngắn 70% thời gian lên ý tưởng kịch bản,
+                  gợi ý cách diễn đạt dễ hiểu cho người mới bắt đầu, tạo hình
+                  ảnh minh họa trực quan và tự động tạo phụ đề chính xác cho
+                  video.
+                </p>
+              </div>
+            </div>
+
+            <!-- NHÚNG VIDEO NGẮN (< 5 PHÚT) HOẶC SẢN PHẨM NỘI DUNG SỐ CỦA BẠN -->
+            <div class="media-placeholder">
+              <!-- CÁCH 1: Nhúng link YouTube/Google Drive bằng thẻ iframe bên dưới (Thay link embed của bạn vào src) -->
+              <div
+                style="
+                  aspect-ratio: 16/9;
+                  width: 100%;
+                  background: #000;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Video bài tập 5"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="media-caption">
+                <i class="fa-solid fa-video"></i> Sản phẩm nội dung số nhúng
+                trực tiếp (Thay link video/slide của bạn vào thẻ iframe)
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== BÀI TẬP 6 (CHƯƠNG 6 - MỤC 6.4) ==================== -->
+        <article class="project-card reveal" data-category="bai6">
+          <div class="project-header">
+            <div>
+              <span class="chapter-tag"
+                >Bài tập 6 • Chương 6 (Mục 6.4): An toàn và liêm chính học thuật
+                trong môi trường số</span
+              >
+              <h3 class="project-title">
+                Sử dụng AI có trách nhiệm trong học tập và nghiên cứu
+              </h3>
+            </div>
+            <span class="section-badge">Hoàn thành</span>
+          </div>
+
+          <div>
+            <div class="sub-box">
+              <h4>
+                <i class="fa-solid fa-building-columns"></i> 1. Nghiên cứu chính
+                sách AI & Phân tích đạo đức học thuật
+              </h4>
+              <!-- ĐIỀN PHÂN TÍCH CHÍNH SÁCH AI CỦA BẠN -->
+              <p>
+                Qua nghiên cứu quy định về Liêm chính học thuật tại các trường
+                đại học, AI chỉ được xem là công cụ hỗ trợ tra cứu, gợi ý ý
+                tưởng và kiểm tra ngôn ngữ. Các vấn đề đạo đức cốt lõi bao gồm:
+                <strong>nguy cơ đạo văn (Plagiarism)</strong> khi sao chép
+                nguyên văn kết quả của AI,
+                <strong>hiện tượng ảo giác thông tin (Hallucination)</strong>
+                tạo ra trích dẫn giả mạo, và sự suy giảm tư duy phản biện nếu
+                sinh viên phụ thuộc hoàn toàn vào máy móc.
+              </p>
+            </div>
+
+            <div class="sub-box" style="margin-bottom: 0">
+              <h4>
+                <i class="fa-solid fa-shield-halved"></i> 2. Bộ nguyên tắc cá
+                nhân (6 nguyên tắc) về sử dụng AI có trách nhiệm
+              </h4>
+              <!-- ĐIỀN 5-7 NGUYÊN TẮC CÁ NHÂN CỦA BẠN -->
+              <div class="principles-list">
+                <div class="principle-item">
+                  <span class="principle-num">1</span>
+                  <div>
+                    <strong>Minh bạch & Trung thực:</strong> Luôn khai báo và
+                    trích dẫn rõ ràng (theo chuẩn Harvard/APA) khi có sử dụng AI
+                    hỗ trợ trong bài tập hoặc báo cáo.
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <span class="principle-num">2</span>
+                  <div>
+                    <strong>Kiểm chứng chéo (Fact-check):</strong> Không bao giờ
+                    tin tưởng tuyệt đối vào số liệu, công thức vật lý hay tài
+                    liệu tham khảo do AI sinh ra mà phải đối chiếu với nguồn học
+                    thuật gốc.
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <span class="principle-num">3</span>
+                  <div>
+                    <strong>AI là trợ lý, không phải người làm thay:</strong>
+                    Chỉ dùng AI để gợi ý dàn ý, giải thích khái niệm khó hoặc rà
+                    soát lỗi; tự mình viết và chịu trách nhiệm 100% về nội dung
+                    cuối cùng.
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <span class="principle-num">4</span>
+                  <div>
+                    <strong>Bảo mật dữ liệu cá nhân:</strong> Tuyệt đối không
+                    tải thông tin nhạy cảm, dữ liệu cá nhân hoặc tài liệu nội bộ
+                    chưa công bố lên các nền tảng AI công cộng.
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <span class="principle-num">5</span>
+                  <div>
+                    <strong>Tôn trọng bản quyền:</strong> Không sử dụng AI để
+                    sao chép hay xâm phạm quyền sở hữu trí tuệ của các tác giả,
+                    nhà nghiên cứu khác.
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <span class="principle-num">6</span>
+                  <div>
+                    <strong>Rèn luyện tư duy độc lập:</strong> Luôn tự suy nghĩ
+                    và giải quyết bài toán trước khi tham khảo gợi ý từ các mô
+                    hình ngôn ngữ lớn.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== PHẦN 3: TRANG TỔNG KẾT (CONCLUSION) ==================== -->
+    <section id="conclusion">
+      <div class="section-header reveal">
+        <span class="section-badge">Bước 3 • Hoàn thiện Portfolio</span>
+        <h2 class="section-title">
+          Tổng kết & Trải nghiệm cá nhân (Conclusion)
+        </h2>
+        <p class="section-subtitle">
+          Nhìn lại hành trình thực hiện dự án Portfolio Kỹ thuật số và những giá
+          trị đúc kết được sau môn học.
+        </p>
+      </div>
+
+      <div class="conclusion-grid reveal">
+        <!-- 1. Trải nghiệm và cảm nhận cá nhân -->
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>Trải nghiệm & Cảm nhận cá nhân</h3>
+          <!-- ĐIỀN TRẢI NGHIỆM CỦA BẠN -->
+          <p style="color: var(--text-secondary); font-size: 0.95rem">
+            Quá trình tự tay thiết kế và viết code HTML/CSS cho trang Portfolio
+            này là một trải nghiệm vô cùng thú vị. Thay vì chỉ làm các bài tập
+            rời rạc, việc kết nối cả 6 bài tập vào một website thống nhất giúp
+            mình nhìn thấy bức tranh toàn cảnh về năng lực công nghệ số của bản
+            thân.
+          </p>
+        </div>
+
+        <!-- 2. Kiến thức & Kỹ năng quan trọng nhất -->
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3>Kiến thức & Kỹ năng đạt được</h3>
+          <!-- ĐIỀN KIẾN THỨC & KỸ NĂNG QUAN TRỌNG NHẤT -->
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span
+                >Tổ chức tệp tin khoa học và tra cứu tài liệu học thuật chuẩn
+                xác bằng toán tử nâng cao.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span
+                >Làm chủ kỹ thuật Prompt Engineering để tối ưu hóa hiệu suất học
+                tập với AI.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span
+                >Quản lý dự án nhóm trực tuyến, sáng tạo nội dung số và giữ vững
+                liêm chính học thuật.</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3. Điểm tâm đắc nhất & Thách thức -->
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+          <h3>Điểm tâm đắc & Thách thức</h3>
+          <!-- ĐIỀN ĐIỂM TÂM ĐẮC VÀ THÁCH THỨC -->
+          <p
+            style="
+              color: var(--text-secondary);
+              font-size: 0.95rem;
+              margin-bottom: 0.5rem;
+            "
+          >
+            <strong>• Tâm đắc nhất:</strong> Tự xây dựng được giao diện web cá
+            nhân mang đậm dấu ấn riêng và áp dụng hiệu quả AI vào việc học
+            chuyên ngành.
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.95rem">
+            <strong>• Thách thức:</strong> Cân chỉnh bố cục HTML/CSS sao cho vừa
+            đẹp mắt, gọn gàng vừa hiển thị đầy đủ minh chứng của cả 6 bài tập
+            một cách trực quan nhất.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CHÂN TRANG (FOOTER) ==================== -->
+    <footer>
+      <p>
+        <strong>Digital Portfolio</strong> • Học phần: Nhập môn Công nghệ số và
+        Ứng dụng Trí tuệ nhân tạo
+      </p>
+      <p style="margin-top: 0.35rem">
+        Thiết kế & Phát triển bởi <strong>Chu Quang Minh</strong> © 2026
+      </p>
+    </footer>
+
+    <!-- ==================== LIGHTBOX PHÓNG TO ẢNH ==================== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightboxImg" src="" alt="Phóng to ảnh" />
+    </div>
+    <script src="make.js"></script>
+  </body>
+</html>
